@@ -1,0 +1,16 @@
+<!-- ICI ON EST CHEZ LE PARENT -->
+<div class="example-wrap">
+    <h1>Abonement à la Newsletter</h1>
+    <p>Renseignez votre e-mail pour vous abonnez à la newsletter</p>
+
+    <app-input label="Adresse e-mail" (inputEmitter)="validateEmail($event)">
+        <app-button name="S'abonner" (clickEmitter)="sendMail()"></app-button>
+    </app-input>
+
+    <app-message-error *ngIf="errorMessage">
+        <h2>
+            {{ errorMessage }}
+        </h2>
+    </app-message-error>
+
+</div>

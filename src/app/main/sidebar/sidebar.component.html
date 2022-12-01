@@ -1,0 +1,13 @@
+<div class="sidebar">
+
+    <div class="logo">
+        <img src="/assets/images/sidebar/logo.png" alt="Octom.">
+    </div>
+
+    <div class="menu">
+        <ul> 
+            <li (click)="navTo(item)" *ngFor="let item of menu"><img src="/assets/images/sidebar/{{item}}-icon.png" alt="{{item}}"></li>
+        </ul>
+    </div>
+
+</div>

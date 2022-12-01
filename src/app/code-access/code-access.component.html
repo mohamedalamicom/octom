@@ -1,0 +1,15 @@
+<!-- ICI ON EST CHEZ LE PARENT -->
+<div class="example-wrap">
+    <h1>Code d'accès</h1>
+    <p>Veuillez renseigner le code d'accès</p>
+
+    <app-input label="Votre code d'accès" type="password"  (inputEmitter)="passwordListener($event)"> <!-- Deux méthode: Paramètres -->
+        <app-button name="Acceder"></app-button> <!-- Première méthode: Content -->
+    </app-input>
+
+    <app-message-error *ngIf="errorMessage">
+        <h1>
+            {{ errorMessage }} <!-- Première méthode: Content -->
+        </h1>
+    </app-message-error>
+</div>

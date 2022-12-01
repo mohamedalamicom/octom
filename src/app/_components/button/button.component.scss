@@ -1,0 +1,35 @@
+button{
+    padding-right                     : 10px;
+    background-color                  : #fff;
+    -webkit-border-top-right-radius   : 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-topright       : 25px;
+    -moz-border-radius-bottomright    : 25px;
+    border-top-right-radius           : 25px;
+    border-bottom-right-radius        : 25px;
+    box-shadow                        : 5px 4px 6px rgba(0, 0, 0, 0.19);
+    border                            : none;
+    cursor                            : pointer; 
+    cursor                            : hand;
+    height: 81px;
+    transform: translateY(-1.5px);    
+    
+    span{
+      margin-left     : 50px;
+      padding         : 24px 45px;
+      
+      font-size       : 0.9em;
+      text-transform  : uppercase;
+      font-weight     : 300 ;
+      color           : #fff;
+      background-color: #F54E59;
+      
+      border-radius   : 20px;
+      box-shadow      : 2px 4px 6px rgba(0, 0, 0, 0.19);
+      
+      &:hover{
+        background-color: #d6121f;
+        box-shadow      : 2px 2px 4px rgba(0, 0, 0, 0.19);
+      }
+    }
+  }

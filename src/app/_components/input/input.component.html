@@ -1,0 +1,9 @@
+<input  [type]="type" [placeholder]="label"
+ #inputEmail (change)="emitInput(inputEmail.value)"
+ > 
+
+
+<!-- Deuxième Méthode -->
+<!--<input  [type]="type" [placeholder]="label" [(ngModel)]="email" (change)="emitEmail()">  Deuxième Méthode -->
+
+<ng-content></ng-content> <!-- Première Méthode -->
